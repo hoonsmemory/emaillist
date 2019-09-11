@@ -16,7 +16,7 @@
 	    Email address: <input type="text" name="email" value=""><br>
 	    <input type="submit" value="submit">
 	</form>
-	<br>
+	<br> 
 	<p>
 		<a href='<%=request.getContextPath() %>'>리스트 바로가기</a>
 	</p>
