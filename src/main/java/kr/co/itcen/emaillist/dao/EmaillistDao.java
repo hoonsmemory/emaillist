@@ -82,10 +82,10 @@ public class EmaillistDao {
 		return connection;
 	}
 
-	public void delate(Long no) {
+	public void delete(Long no) {
 	}	
 
-	public void delate() {
+	public void delete() {
 		Connection connection = null;
 		PreparedStatement pstmt = null;
 		
@@ -123,7 +123,7 @@ public class EmaillistDao {
 		try {
 			connection = getConnection();
 			
-			String sql = "select no, first_name, last_name, email from emaillist order by no asc";
+			String sql = "select no, first_name, last_name, email from emaillist order by no desc";
 			pstmt = connection.prepareStatement(sql);
 			
 			rs = pstmt.executeQuery();

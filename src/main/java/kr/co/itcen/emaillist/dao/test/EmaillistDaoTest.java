@@ -8,14 +8,15 @@ import kr.co.itcen.emaillist.vo.EmaillistVo;
 public class EmaillistDaoTest {
 
 	public static void main(String[] args) {
-		insertTest();
+		//insertTest();
+		//deleteAll();
 		getListTest();
 		
-		//deleteAll();
+		
 	}
 	
 	private static void deleteAll() {
-		new EmaillistDao().delate();
+		new EmaillistDao().delete();
 	}
 	
 	private static void insertTest() {
